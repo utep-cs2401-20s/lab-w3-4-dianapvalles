@@ -12,11 +12,7 @@ public class TorusGameOfLife extends GameOfLife{
         super(board);
     }
 
-    /*
-        0 0 0
-        1 1 1
-        0 0 0
-     */
+
     @Override
     public int neighbors(int row, int col){
         int countAlive = 0;
@@ -50,7 +46,6 @@ public class TorusGameOfLife extends GameOfLife{
         if(previousBoard[row][nextCol] == 1){ //looks for the one in the right
             countAlive++;
         }
-
         return countAlive;
     }
 }
